@@ -1,0 +1,47 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.container {
+  padding: 0 $space-super $space-super $space-super;
+  max-width: $desktop;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 36px;
+  padding: $space-large 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  text-align: center;
+  margin: 0 $x2;
+}
+
+.serviceImage {
+  width: 250px;
+  margin-bottom: $space-large;
+}
+
+.serviceHeader {
+  font-size: 26px;
+}
+
+.serviceText {
+  font-size: 16px;
+}

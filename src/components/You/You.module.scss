@@ -1,0 +1,38 @@
+@import "../../styles/colors";
+@import "../../styles/variables";
+
+.container {
+  padding: 0 $space-super $space-super $space-super;
+  max-width: $desktop;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 36px;
+  padding: $space-large 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  text-align: center;
+  margin: 0 $x2;
+}
+
+.itemText {
+  font-size: 16px;
+}
