@@ -14,9 +14,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media (max-width: $tablet) {
+    padding: 0 $space-large $space-large $space-large;
+  }
 }
 
 .heading {
   font-size: 36px;
   padding: $space-large 0;
+  text-align: center;
+
+  @media (max-width: $tablet) {
+    font-size: 28px;
+  }
 }

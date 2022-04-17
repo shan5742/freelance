@@ -3,20 +3,17 @@ import dev from "../../assets/coding.svg";
 import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
 import ButtonSecondary from "../ButtonSecondary/ButtonSecondary";
 import s from "./Hero.module.scss";
-export default function Hero() {
-  const onHire = () => {
-    console.log("Hire Clicked");
-  };
+export default function Hero({ viewRef }) {
   return (
-    <div className={s.container}>
+    <div ref={viewRef} className={s.container}>
       <div className={s.content}>
-        <h1 className={s.heading}>Ready, Dev, Go</h1>
+        <h1 className={s.heading}>Upswing Digital</h1>
         <p className={s.subHeading}>
           Helping you with your online presence at affordable prices.
         </p>
         <div className={s.buttonWrapper}>
-          <ButtonPrimary text="Hire Us" onClick={onHire} />
-          <ButtonSecondary text="View Services" />
+          <ButtonPrimary text="Hire Us" href="#contact" />
+          <ButtonSecondary href="#services" text="View Services" />
         </div>
       </div>
       <div className={s.imageWrapper}>

@@ -8,6 +8,10 @@
   padding: $space-super;
   max-width: $desktop;
   margin: auto;
+
+  @media (max-width: $tablet) {
+    padding: $space-large;
+  }
 }
 
 .content {
@@ -16,20 +20,37 @@
 
 .heading {
   font-size: 48px;
+
+  @media (max-width: $tablet) {
+    font-size: 36px;
+  }
 }
 
 .subHeading {
   font-size: 26px;
+
+  @media (max-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .buttonWrapper {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .imageWrapper {
   display: flex;
   justify-content: center;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .image {

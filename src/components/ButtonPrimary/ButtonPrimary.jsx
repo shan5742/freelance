@@ -1,10 +1,10 @@
 import React from "react";
 import s from "./ButtonPrimary.module.scss";
 
-export default function ButtonPrimary({ text, onClick }) {
+export default function ButtonPrimary({ text, href }) {
   return (
-    <button onClick={onClick} className={s.button}>
+    <a href={href} a className={s.button}>
       {text}
-    </button>
+    </a>
   );
 }

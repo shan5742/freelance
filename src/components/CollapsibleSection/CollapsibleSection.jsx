@@ -15,7 +15,7 @@ export const CollapsibleSection = ({
         className={s.collapsibleTitleContainer}
         onClick={() => setExpanded(!expanded)}
       >
-        <h4 className={s.collapsibleTitle}>
+        <h4 className={expanded ? s.openTitle : s.collapsibleTitle}>
           {Icon && <Icon />}
           {title}
         </h4>

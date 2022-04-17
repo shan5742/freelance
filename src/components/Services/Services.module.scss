@@ -9,11 +9,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media (max-width: $tablet) {
+    padding: 0 $space-large $space-large $space-large;
+  }
 }
 
 .heading {
   font-size: 36px;
   padding: $space-large 0;
+  text-align: center;
+
+  @media (max-width: $tablet) {
+    font-size: 28px;
+  }
 }
 
 .wrapper {
@@ -26,11 +35,18 @@
 .serviceItem {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   width: 280px;
   text-align: center;
   margin: 0 $x2;
+  height: 600px;
+
+  @media (max-width: $tablet) {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    height: unset;
+  }
 }
 
 .serviceImage {

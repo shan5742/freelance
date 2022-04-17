@@ -2,7 +2,7 @@
 @import "../../styles/variables";
 
 .button {
-  background-color: $red;
+  background-color: $green;
   border-radius: $x1;
   display: flex;
   justify-content: center;
@@ -13,4 +13,14 @@
   margin: $x1 0;
   cursor: pointer;
   font-size: 18px;
+  color: $dark;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @media (max-width: $tablet) {
+    width: 175px;
+    height: 40px;
+    font-size: 14px;
+  }
 }
