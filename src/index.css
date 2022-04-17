@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #181820;
@@ -9,7 +9,7 @@ body {
 
 input,
 textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -20,7 +20,8 @@ h5,
 h6,
 a,
 button {
-  font-family: "Gravitas One", cursive;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
   text-decoration: none;
   color: #d6edff;
 }
